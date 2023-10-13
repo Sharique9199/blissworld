@@ -1,0 +1,9 @@
+.blurDiv{
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}

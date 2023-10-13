@@ -1,0 +1,194 @@
+.mainPopUpContainer {
+    /* width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 6; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+    overflow: hidden;
+    background-color:  rgba(0, 0, 0, 0.7);
+    inset: 0px;
+}
+
+.popupContainer {
+    width: 35%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid red;
+    z-index: 6;
+    background-color: #ffffff;
+    opacity: 5 !important;
+    border-radius: 10px;
+    
+}
+
+.crossIcon {
+    text-align: end;
+    padding: 0.5rem 0.7rem 0 0;
+    font-size: 1.5rem;
+    /* cursor: pointer; */
+}
+
+.popUpDiv {
+    width: 100%;
+}
+
+.imgAndDesDiv {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+
+}
+
+.imgDiv {
+    width: 30%;
+    /* border: 1px solid black; */
+}
+
+.imgDiv img {
+    width: 100%;
+}
+
+.descDiv {
+    width: 65%;
+    padding: 0.5rem 0 0 0.2rem;
+    /* margin-left: 2px; */
+    /* border: 2px solid yellow; */
+}
+
+.descDiv>h3+p {
+    padding-top: 0.5rem;
+    /* padding-left: 0.5rem; */
+}
+
+.descDiv>h3+p+p {
+    padding-top: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: black;
+}
+
+.bothBtnDiv {
+
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.bothBtnDiv button {
+    width: 45%;
+    padding: 0.7rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 10px;
+
+}
+
+.bothBtnDiv button:first-child {
+
+    border: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.bothBtnDiv button:last-child {
+
+    border: none;
+    background-color: #8cd0e3;
+    cursor: pointer;
+}
+
+
+
+.animated {
+
+    -webkit-animation-duration: 1s;
+
+    animation-duration: 1s;
+
+    -webkit-animation-fill-mode: both;
+
+    animation-fill-mode: both;
+
+}
+
+.animated.faster {
+
+    -webkit-animation-duration: 500ms;
+
+    animation-duration: 500ms;
+
+}
+
+.fadeIn {
+
+    -webkit-animation-name: fadeIn;
+
+    animation-name: fadeIn;
+
+}
+
+.fadeOut {
+
+    -webkit-animation-name: fadeOut;
+
+    animation-name: fadeOut;
+
+}
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}
+
+@keyframes fadeOut {
+
+    from {
+
+        opacity: 1;
+
+    }
+
+    to {
+
+        opacity: 0;
+
+    }
+
+}
+
+/* Responsive start */
+@media only screen and (max-width: 480px)  {
+    .popupContainer {
+        width: 85%;
+        /* background-color: red; */
+        
+        
+    }
+    
+}

@@ -1,0 +1,63 @@
+{
+    "main_title": "SETS & KITS",
+    "info":"",
+    "data":[
+        {
+            "id":1,
+            "img": "https://cdn.shopify.com/s/files/1/0702/9017/8333/products/BLISS_DAY_NIGHT_Serum_Kit_8ml_COMBO_FINALupdated__49523.1674080861.1280.1280.jpg",
+            "title": "AM/PM Serum Duo",
+            "desc":"Day and Night Serum Duo",
+            "price": 15
+        },
+        {
+            "id":2,
+            "img": "https://cdn.shopify.com/s/files/1/0702/9017/8333/products/WaxRelax__13808.1664405799.1280.1280.jpg",
+            "title": "Wax & Relax Hair Removal Kit",
+            "desc":"Spa Hair Removal Duo",
+            "price": 36
+        },
+        {
+            "id":3,
+            "img": "https://cdn.shopify.com/s/files/1/0702/9017/8333/products/Bundle_3__LS_Shampoo_LS_Conditioner__62252.1643739832.1280.1280.jpg",
+            "title": "Love Your Locks Hair Care Kit",
+            "desc":"Vitamin E and B5 Dynamic Hair Duo",
+            "price": 72
+        },
+        {
+            "id":4,
+            "img": "https://cdn.shopify.com/s/files/1/0702/9017/8333/products/Bundle_6__LS_Body_Butter_Grapefruit_Body_Butter_Blood_Orange_Body_Butter_Naked_Body_Butter_all_full_size_200_ML_1__10748.1659723177.1280.1280.jpg",
+            "title": "Butter Together Body Butter Set",
+            "desc":"Cult-Fave Body Butter Quad",
+            "price": 38
+        },
+        {
+            "id":5,
+            "img": "https://cdn.shopify.com/s/files/1/0702/9017/8333/products/Bundle_10__Clear_Genius_Cleanser_Clear_Genius_Toner_Serum_Clear_Genius_Spot_Treatment__21406.1643737212.1280.1280.jpg",
+            "title": "Let’s Be Clear Skincare Kit",
+            "desc":"Clinically Proven Acne-Fighting Set",
+            "price": 35
+        },
+        {
+            "id":6,
+            "img": "https://cdn.shopify.com/s/files/1/0702/9017/8333/products/Bundle_9__Youth_Got_This_Serum_Block_Star__93776.1643740000.1280.1280.jpg",
+            "title": "Protect & Glow Duo",
+            "desc":"Pure Retinol and SPF 30 Protection",
+            "price": 42
+        },
+
+        {
+            "id":7,
+            "img": "https://cdn.shopify.com/s/files/1/0702/9017/8333/products/Bundle_2__Block_Star_Bright_Idea_Serum__45631.1649698291.1280.1280.jpg",
+            "title": "Brighten & Block Duo",
+            "desc":"Protection From Free Radicals + UVA/UVB Rays",
+            "price": 42
+        },
+        {
+            "id":8,
+            "img": "https://cdn.shopify.com/s/files/1/0702/9017/8333/products/Bundle_3__Block_Star_Bundle__55999.1649698264.1280.1280.jpg",
+            "title": "Block This Way Duo",
+            "desc":"Mineral Daily Sunscreen",
+            "price": 40
+        }
+    ]
+}

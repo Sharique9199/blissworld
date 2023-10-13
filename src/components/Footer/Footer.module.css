@@ -1,0 +1,126 @@
+
+.footerContainer{
+    width: 100%;
+    display: flex;
+   
+}
+.footerfirstCol{
+    width: 70%;
+    display: flex;
+    background-color: rgb(140,208,227);
+    /* justify-content: center;
+    flex-wrap: wrap; */
+}
+.footerElementDiv {
+    width: 25%;
+}
+.footerElementDiv img{
+    padding: 1rem 5.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footerElementDiv>h3 {
+    padding-left: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.9rem;
+}
+
+.footerElementDiv>h3+ul li {
+
+    padding: 0.5rem 0 0 1.5rem;
+    list-style: none;
+}
+
+.footerElementDiv>h3+ul li:hover {
+    cursor: pointer;
+    color: rgb(230, 243, 50);
+}
+
+.foo {
+    font-size: 1.5rem;
+}
+.footerInputAndButton{
+    width: 30%;
+    background-color: rgb(245,234,119);
+}
+.footerInputAndButton>h2 {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+.footerInputAndButton>h2+p{
+    text-align: center;
+}
+.footerInputAndButton>h2+p+input{
+    width: 85%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    font-weight: 600;
+    outline: none;
+
+}
+.footerInputAndButton>h2+p+input+br+button{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    padding: 0.9rem;
+    font-weight: 900;
+    background-color: rgb(115,210,230);
+    border: none;
+    box-shadow: 2px 3px rgb(241, 160, 173);
+    cursor: pointer;
+}
+.footerInputAndButton>h2+p+input+br+button:hover{
+    background-color: rgb(148, 138, 211) ;
+    transition: all 0.9s ease-in-out;
+}
+.footerInputAndButton>h2+p+input+br+button+p{
+    float: right;
+    margin-top: 3.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+
+}
+@media only screen and (max-width: 480px){
+    .footerContainer{
+        width: 100%;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+       
+        }
+        .footerfirstCol{
+            width: 100%;
+            /* display: flex;
+            flex-direction: column; */
+           
+        }
+        .footerInputAndButton{
+            width: 100%;
+            background-color: rgb(245,234,119);
+        }
+}
+/* ipad and more */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    
+.footerContainer{
+    width: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+   
+    }
+    .footerfirstCol{
+        width: 100%;
+        /* display: flex;
+        flex-direction: column; */
+       
+    }
+    .footerInputAndButton{
+        width: 100%;
+        background-color: rgb(245,234,119);
+    }
+}
+    

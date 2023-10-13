@@ -1,0 +1,96 @@
+
+  [  
+    {
+        "main_title" : "GLOW-GIVING FAVORITES",
+        "info" : "Treat yourself to smooth and hydrated happy skin",
+        "data": [
+            {
+            "id":1,
+            "img": "https://cdn11.bigcommerce.com/s-9p889rxpkb/images/stencil/1200w/products/315/1603/thats_incredi_peel_sku_1003_30031_01__44289resized__35680.1678830179.jpg",
+            "title": "That's Incredi-peel Glycolic Acid Pads",
+             "desc": "Spa-strength Glycolic Resurfacing Pads to Smooth & Brighten",
+             "price": 25
+            },
+            {
+                "id":2,
+                "img": "https://cdn11.bigcommerce.com/s-9p889rxpkb/images/stencil/1200w/products/385/1214/BLISS_Bright_Idea_Vitamin_C_SERUM_30ml_FINALupdated__36719.1678829766.jpg",
+                "title": "Bright Idea Serum",
+                 "desc": "Vitamin C + Tri-Peptide Collagen Protecting &amp; Brightening Serum",
+                 "price": 28
+            },
+            {
+                "id":3,
+                "img": "https://cdn11.bigcommerce.com/s-9p889rxpkb/images/stencil/1200w/products/406/1277/Youth_Got_This_Moisturizer_Front__84970.1678830050.jpg",
+                "title": "Youth Got This Moisturizer",
+                 "desc": "Prevent-4™ Pure Retinol Deep Hydration Moisturizer",
+                 "price": 28
+            },
+            {
+                "id":4,
+                "img": "https://cdn11.bigcommerce.com/s-9p889rxpkb/images/stencil/1200w/products/425/1314/Rest_Assured_Eye_Cream_Front__54512.1674080733.jpg",
+                "title": "Rest Assured Eye Cream",
+                 "desc": "Dark Circle Reducing & Depuffing Eye Cream For Refreshed Eyes",
+                 "price": 25
+            },
+            {
+                "id":5,
+                "img": "https://cdn11.bigcommerce.com/s-9p889rxpkb/images/stencil/1200w/products/445/1453/Mighty_Biome_Moisturizer_Concentrate_Front__97825.1674081071.jpg",
+                "title": "Mighty Biome Pre/Post Biotic  Barrier Aid™ Moisturizer",
+                 "desc": "Ultra-Hydrating Moisturizer Concentrate",
+                 "price": 25
+            },
+            {
+                "id":6,
+                "img": "https://cdn11.bigcommerce.com/s-9p889rxpkb/images/stencil/1200w/products/466/1454/Blackhead_Breadown_Front__80282.1678830164.jpg",
+                "title": "Blackhead Breakdown",
+                 "desc": "Blackhead Purifying Stick",
+                 "price": 18
+            },
+            {
+                "id":7,
+                "img": "https://cdn11.bigcommerce.com/s-9p889rxpkb/images/stencil/1200w/products/485/1618/BLISS_Vegan_Collagen_Hyaluronic_Acid_HYDRATING_Mask_FRONTflat__15303.1674514984.jpg",
+                "title": "Hydrating Sheet Mask",
+                 "desc": "Vegan Collagen + Hyaluronic Acid Sheet Mask",
+                 "price": 4
+            },
+            {
+                "id":8,
+                "img": "https://cdn11.bigcommerce.com/s-9p889rxpkb/images/stencil/1200w/products/488/1626/BLISS_Glow_Rush_Vitamin_C_45mL_Moisturizer_FRONTupdate__29489.1677260725.jpg",
+                "title": "Glow Rush Moisturizer",
+                 "desc": "Vitamin C Luminous Daily Moisturizer",
+                 "price": 25
+            }
+        ]
+    },
+
+    {
+        "main_title":"Bright Idea",
+        "info":"Boosts Brightness & Elasticity In 1 Use With Clinical-Grade Vitamin C",
+        "data":[
+            {"id":1,
+                "img":"https://cdn11.bigcommerce.com/s-9p889rxpkb/product_images/uploaded_images/bright-idea-section-moisturizer-resized.png",
+                "title":"Bright Idea Moisturizer",
+                "desc":"Vitamin C + Tri-Peptide Collagen Protecting & Brightening Moisturizer",
+                "price":26
+            },
+            {"id":2,
+                "img":"https://cdn11.bigcommerce.com/s-9p889rxpkb/product_images/uploaded_images/bright-idea-section-resized.png",
+                "title":"Bright Idea Serum",
+                "desc":"Vitamin C + Tri-Peptide Collagen Protecting & Brightening Serum",
+                "price":28
+            },
+            {"id":3,
+                "img":"https://cdn11.bigcommerce.com/s-9p889rxpkb/product_images/uploaded_images/331499757-bi-sheet-mask-front-290x290-min.jpg",
+                "title":"Bright Idea Face Mask",
+                "desc":"Holographic Foil Sheet Mask",
+                "price":4
+            },
+            {"id":4,
+                "img":"https://cdn11.bigcommerce.com/s-9p889rxpkb/product_images/uploaded_images/bright-idea-section-moisturizer-resized.png",
+                "title":"Bright Idea Moisturizer Travel Mini",
+                "desc":"Vitamin C + Tri-Peptide Collagen Protecting & Brightening Moisturizer",
+                "price":6
+            }
+        ]
+    }
+]

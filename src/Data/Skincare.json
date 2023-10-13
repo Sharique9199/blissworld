@@ -1,0 +1,232 @@
+{
+    "main_title": "SKINCARE",
+    "info": "",
+    "data":[
+        {
+            "id":1,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/BLISS_Bright_Idea_Vitamin_C_SERUM_30ml_FINALupdated__36719.1674082916.1280.1280.jpg",
+            "title":"Bright Idea Serum",
+            "desc": "Vitamin C + Tri-Peptide Collagen Protecting & Brightening Serum",
+            "price": 28 
+        },
+        {   
+            "id":2,
+            "img": "https://www.blissworld.com/cdn/shop/files/Bliss-BlockStarSoldier-NBCBadge-ECommerce_JPG-ECommerce_JPG_900x.jpg?v=1695221153",
+            "title": "Block Star Daily Mineral SPF 30",
+            "desc": "Protects from harmful UVA & UVB rays",
+            "price":  25 
+        },
+        {   
+            "id":3,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/DrenchQuench_Updated_Front__12756.1614899657.1280.1280__07783.1674082552.1280.1280.jpg",
+            "title":"Drench & Quench Moisturizer",
+            "desc":"Cream-to-Water Hydrator for All-Day Moisture",
+            "price":24
+        },
+        {
+            "id": 4,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/Blackhead_Breadown_Front__80282.1674081051.1280.1280.jpg",
+            "title":"Blackhead Breakdown",
+            "desc":"Blackhead Purifying Stick",
+            "price": 18 
+        },
+        {
+            "id":5,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/Rest_Assured_Eye_Cream_Front__54512.1674080733.1280.1280.jpg",
+            "title":"Rest Assured Eye Cream",
+            "desc":"Dark Circle Reducing & Depuffing Eye Cream for Refreshed Eyes",
+            "price": 25 
+        },
+        {
+            "id":6,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/Bliss_Soldiers_Youth_Got_This_No_Badge.jpg",
+            "title":"Youth Got This Serum",
+            "desc":"Prevent-4™ Pure Retinol Advanced Skin Smoothing Serum",
+            "price": 28
+        },
+        {
+            "id":7,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/fab_foaming_cleanser_sku_1003_30040_01__17937.1674082401.1280.1280.jpg",
+            "title":"Fab Foaming Exfoliating Cleanser",
+            "desc":"2-in-1 Cleanser & Exfoliator With Bamboo Buffers",
+            "price":15 
+        },
+        {
+            "id":8,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/thats_incredi_peel_sku_1003_30031_01__44289resized__35680_7941856f-a381-4ec0-a20c-c03048f7aa59.jpg",
+            "title":"That's Incredi-peel Glycolic Acid Pads",
+            "desc":"Spa-strength Glycolic Resurfacing Pads to Smooth & Brighten",
+            "price":25  
+        },
+        {
+            "id":9,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/Bundle_1__Rest_Assured_Eye_Cream_Bright_Idea_Serum__24624.1649888091.1280.1280.jpg",
+            "title":"Get It Bright Duo",
+            "desc":"Vitamin C Power Couple",
+            "price": 42 
+        },
+        {
+            "id":10,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/Clear_Genius_Toner_Front__51597.1674082663.1280.1280.jpg",
+            "title":"Clear Genius Toner + Serum",
+            "desc":"2-in-1 Clarifying Toner + Serum",
+            "price": 18 
+        },
+        {
+            "id":11,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/eye_got_this_sku_1003_30063_01__61396.1674081441.1280.1280.jpg",
+            "title":"Eye Got This Under Eye Mask",
+            "desc":"Holographic Foil Eye Masks for Dark Circles",
+            "price":4  
+        },
+        {
+            "id":12,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/glowhydrate_serum_sku_1003_30110_01__56680.1674081354.1280.1280.jpg",
+            "title":"Glow & Hydrate Day Hyaluronic Serum",
+            "desc":"Niacinamide + Hyaluronic Acid Day Serum",
+            "price": 22
+        },
+        {
+            "id":13,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/Bundle_10__Clear_Genius_Cleanser_Clear_Genius_Toner_Serum_Clear_Genius_Spot_Treatment__21406.1643737212.1280.1280.jpg",
+            "title":"Let’s Be Clear Skincare Kit",
+            "desc":"Clinically Proven Acne-Fighting Set",
+            "price":  35
+        },
+        {
+            "id":14,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/makeupmelt_wipes_sku_1003_30030_01__32483.1674081132.1280.1280.jpg",
+            "title":"Makeup Melt Oil Free Makeup Wipes",
+            "desc":"Oil-free Makeup Remover Wipes",
+            "price":  7
+        },
+        {
+            "id":15,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/BLISS_Bright_Idea_Vitamin_C_MOISTURIZER_50ml_JAR_FINALupdated__91912.1674082802.1280.1280.jpg",
+            "title":"Bright Idea Moisturizer",
+            "desc":"Vitamin C + Tri-Peptide Collagen Protecting & Brightening Moisturizer",
+            "price": 26 
+        },
+        {
+            "id":16,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/Youth_Got_This_Moisturizer_Front__84970.1674080308.1280.1280.jpg",
+            "title":"Prevent-4™ Pure Retinol Deep Hydration Moisturizer",
+            "desc":"Vitamin C + Tri-Peptide Collagen Protecting & Brightening Moisturizer",
+            "price":28  
+        },
+        {
+            "id":17,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/12ML_1000x1000_with_shadows_seals__16427.1674081329.1280.1280.jpg",
+            "title":"Block Star SPF 30 Mini",
+            "desc":"Mineral Daily Sunscreen",
+            "price":7  
+        },
+        {
+            "id":18,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/Bundle_9__Youth_Got_This_Serum_Block_Star__93776.1643740000.1280.1280.jpg",
+            "title":"Protect & Glow Duo",
+            "desc":"Pure Retinol and SPF 30 Protection",
+            "price":  42
+        },
+        {
+            "id":19,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/Clarifying_gel_cleanser_front__96525.1674082691.1280.1280.jpg",
+            "title":"Clear Genius Cleanser",
+            "desc":"Clarifying Gel Cleanser",
+            "price":15  
+        },
+        {
+            "id":20,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/Bliss_Soldiers_BlissPro_Liquid_Exfoliant_No_Badge.jpg",
+            "title":"BlissPro Liquid Exfoliant",
+            "desc":"11.8% AHA | BHA | PHA Liquid Exfoliant",
+            "price":24  
+        },
+        {
+            "id":21,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/Bundle_2__Block_Star_Bright_Idea_Serum__45631.1649698291.1280.1280.jpg",
+            "title":"Brighten & Block Duo",
+            "desc":"Protection From Free Radicals + UVA/UVB Rays",
+            "price": 53 
+        },
+        {
+            "id":22,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/BLISS_Vegan_Collagen_Hyaluronic_Acid_HYDRATING_Mask_FRONTflat__15303.1674514984.1280.1280.jpg",
+            "title":"Hydrating Sheet Mask",
+            "desc":"Vegan Collagen + Hyaluronic Acid Sheet Mask",
+            "price":4  
+        },
+        {
+            "id":23,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/BLISS_Vitamin_C_Niacinamide_Brightening_Mask_FRONTflat__21101.1674536387.1280.1280.jpg",
+            "title":"Brightening Sheet Mask",
+            "desc":"Vitamin C + Niacinamide Sheet Mask",
+            "price":4  
+        },
+
+        {
+            "id":24,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/Mighty_Biome_Moisturizer_Concentrate_Front__97825.1674081071.1280.1280.jpg",
+            "title":"Mighty Biome Pre/Post Biotics + Barrier Aid™ Moisturizer",
+            "desc":"Ultra-Hydrating Moisturizer Concentrate",
+            "price": 25 
+        },
+        {
+            "id":25,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/Mighty_Biome_Toner_Front__30153.1674081061.1280.1280.jpg",
+            "title":"Mighty Biome Pre/Post Biotics + Barrier Aid™ Toner + Serum",
+            "desc":"Skin Balancing Milky Toner + Serum",
+            "price":  20
+        },
+
+        {
+            "id":26,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/Bundle_3__Block_Star_Bundle__55999.1649698264.1280.1280.jpg",
+            "title":"Block This Way Duo",
+            "desc":"Mineral Daily Sunscreen",
+            "price":  40
+        },
+        {
+            "id":27,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/DQ_All_Day_Serum_Front__51201.1674082541.1280.1280.jpg",
+            "title":"Drench & Quench Serum",
+            "desc":"All-Day Moisture Serum",
+            "price": 27 
+        },
+        {
+            "id":28,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/rose_gold_moisturizer_sku_1003_30006_01__03820.1674080644.1280.1280.jpg",
+            "title":"Rose Gold Rescue Rose Water Moisturizer",
+            "desc":"Gentle Moisture Cream For Sensitive Skin",
+            "price":17  
+        },
+        {
+            "id":29,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/rose_gold_cleanser_sku_1003_30047_01__57388.1674081406.1280.1280.jpg",
+            "title":"Rose Gold Rescue Rose Water Cleanser",
+            "desc":"Gentle Foaming Rose Water Cleanser For Sensitive Skin",
+            "price":  15
+        },
+        {
+            "id":30,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/mighty_marshmallow_sku_1003_30013_01__87902.1674081100.1280.1280.jpg",
+            "title":"Mighty Marshmallow Brightening Face Mask",
+            "desc":"Bright & Radiant Whipped Face Mask",
+            "price":15  
+        },
+        {
+            "id":31,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/makeupmelt_cleanser_sku_1003_30041_01__73779.1674081122.1280.1280.jpg",
+            "title":"Makeup Melt Cleanser",
+            "desc":"Dry/Wet Gentle Jelly Cleanser with Rose Flower",
+            "price": 15 
+        },
+        {
+            "id":32,
+            "img":"https://cdn.shopify.com/s/files/1/0702/9017/8333/products/micro_magic_sku_1003_30043_01__95480.1674081089.1280.1280.jpg",
+            "title":"Micro Magic Microdermabrasion Scrub",
+            "desc":"Skin-renewing Microdermabrasion Scrub",
+            "price": 15 
+        }
+    ]
+}

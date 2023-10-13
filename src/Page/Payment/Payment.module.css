@@ -1,0 +1,82 @@
+.paymentcontainer{
+    width: 45%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid red;
+    z-index: 6;
+    background-color: #d8d6d6;
+    opacity: 5 !important;
+    border-radius: 10px;
+}
+.paymmentCardTitle{
+    display: flex;
+    justify-content: space-between;
+   padding: 1.2rem 0.5rem;
+   background-color: rgb(243, 245, 245);
+}
+.paymmentCardTitle h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cartDetailsAndImage{
+    width: 100%;
+    display: flex;
+}
+.cartDetails{
+    width: 60%;
+    height: 20vh;
+    border: 1px solid black;
+}
+form{
+    width: 100%;
+    margin-left: 0rem;
+    padding: 0.5rem;
+    border: 1px solid rgb(0, 255, 55);
+    }
+    form input{
+        padding: 0.2rem;
+        margin-bottom: 10px;
+        outline: none;
+        width: 60%;
+       
+    }  
+    label{
+        font-weight: 700;
+    }
+    form>input:first-child{
+        padding: 2rem;
+    }
+    .cardNo{
+        margin-left: 2.5rem;
+        /* padding: 5rem; */
+    }
+    .name{
+        margin-left: 0.5rem;
+    }
+    .expiry{
+        margin-left: 0.5rem;
+        display: flex;
+    }
+    select{
+        margin-left:  0.5rem;
+        padding:0.2rem 0.5rem;
+        /* margin-right: 0.5rem; */
+    }
+    
+.cardImg{
+    width: 40%;
+    border: 1px solid blue;
+}
+.bliss p{
+    font-size: 1.2rem;
+}
+
+.cardImg img{
+    padding:0.1rem;
+    width: 100%;
+    }
+    .paymetSucesBtn{
+
+    }
+

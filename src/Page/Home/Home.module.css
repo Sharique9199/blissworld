@@ -1,0 +1,101 @@
+.CardBox {
+    width: 95%;
+    margin: auto;
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+    gap: 1rem;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.homeContainer {
+    width: 100%;
+}
+
+.bigCardBox {
+    width: 100%;
+    /* background-color: red; */
+    /* height: 20vh; */
+    display: flex;
+    margin-top: 1rem;
+    background-image: linear-gradient(rgb(154, 204, 235), rgb(244, 152, 244));
+}
+
+.bothBigCardBox {
+    width: 46%;
+    margin: 2.5rem auto;
+    position: relative;
+
+}
+
+.bothBigCardBox>div img {
+    width: 100%;
+    padding: 3rem 1.5rem;
+    /* padding: 5rem; */
+}
+
+.cardBoxDetails {
+    width: 70%;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background-color: aliceblue;
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cardBoxDetails>h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: -1.7rem;
+
+}
+
+.cardBoxDetails>h3+p {
+    text-align: center;
+    /* margin-top: 0.5rem; */
+    /* margin-top: -0.5rem; */
+}
+
+.bothBigCardBox>button {
+    width: 55%;
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem;
+    z-index: 0;
+    background-color: rgb(140, 208, 227);
+    border: none;
+    color: #fff;
+    box-shadow: 2px 3px yellow;
+
+}
+
+.bothBigCardBox>button:hover {
+    cursor: pointer;
+    background-color: rgb(148, 138, 211);
+    transition: all 0.9s ease-in-out;
+}
+
+.bliss {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.bliss+p {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.oneImgDiv {
+    max-width: 70%;
+    margin: 2rem auto;
+}
+
+.oneImgDiv img {
+    margin: 0 auto;
+}

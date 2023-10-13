@@ -1,0 +1,37 @@
+/* .active::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    left: 10%;
+    background-color: red;
+    transition:all ease 1s;
+} */
+/* active::after{
+    content: '';
+    position: absolute;
+    top: 90%;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: red;
+    
+}
+.active:hover::after{
+    width: 10%;
+} */
+/* body{
+    margin: 0;
+    padding: 0;
+} */
+.active{
+    /* text-decoration: underline; */
+    /* background-color: rgb(255, 31, 31); */
+    /* border-left: 5px solid red; */
+    /* background: linear-gradient(to bottom right,rgb(223, 147, 147),rgb(161, 89, 174),blue); */
+    border-bottom: 2px solid rgb(241, 77, 77);
+    /* border-radius: 10px; */
+    /* box-shadow: 0 5px 5px rgb(239, 68, 68); */
+}
