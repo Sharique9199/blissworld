@@ -28,13 +28,13 @@
     height: 20vh;
     border: 1px solid black;
 }
-form{
+.paymentFormCont{
     width: 100%;
     margin-left: 0rem;
     padding: 0.5rem;
     border: 1px solid rgb(0, 255, 55);
     }
-    form input{
+     .paymentFormCont input{
         padding: 0.2rem;
         margin-bottom: 10px;
         outline: none;
@@ -44,7 +44,7 @@ form{
     label{
         font-weight: 700;
     }
-    form>input:first-child{
+    .paymentFormCont>input:first-child{
         padding: 2rem;
     }
     .cardNo{

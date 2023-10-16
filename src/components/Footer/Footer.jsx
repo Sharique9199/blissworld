@@ -6,6 +6,7 @@ const Footer=()=>{
     return(
         <>
             <div  className={style.footerContainer}>
+                
                 <div  className={style.footerfirstCol}>
                     <div className={style.footerElementDiv}>
                         <img src={footerImg} alt="footerImg" />
@@ -46,6 +47,7 @@ const Footer=()=>{
                         </div>
                     </div>
                 </div>
+
                 <div className={style.footerInputAndButton}>
                     <h2>Hear the lastest.</h2>
                     <p>(new products, exclusive offers and other suprises)</p>

@@ -12,7 +12,7 @@ const Payment = () => {
                 </div>
                 <div className={style.cartDetailsAndImage}>
                     <div className={style.cartDetails}>
-                        <form action="">
+                        <form action="" className={style.paymentFormCont}> 
                             <label htmlFor="cardNumber">Card Number:</label>
                            
                             <input type='nuumber' id="cardNumber"  className={style.cardNo}/>

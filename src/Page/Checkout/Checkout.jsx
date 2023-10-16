@@ -10,6 +10,7 @@ const Checkout = () => {
   return (
     <Layout>
         <div className={style.checkoutContainer}>
+
             <div className={style.checkoutFormContainer}>
                 
             <div className={style.formImgCont}>
@@ -17,7 +18,7 @@ const Checkout = () => {
                         alt=""/>
                 </div>
 
-                <form>
+                <form className={style.checkoutFormCont}>
                     <h2 className={style.contactInfo}>Contact information</h2>
                     <div className={style.inputLargeDiv}>
                         <label htmlFor="email">
@@ -82,6 +83,7 @@ const Checkout = () => {
                         <br/>
                         <input type="text" id="apartments"/>
                     </div>
+                    
 
                     <div className={style.subStatePost}>
                     {/* <div lassName={style.nameDivSection}> */}

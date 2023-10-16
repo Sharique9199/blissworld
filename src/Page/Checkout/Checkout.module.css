@@ -8,14 +8,14 @@
 
 .checkoutFormContainer {
     width: 55%;
-    background-color: #fff;
-    border: 1px solid pink;
+    background-color: #fff; 
+    /* border: 1px solid pink; */
 }
 
 .checkoutImgContainer {
     width: 45%;
     background-color: #fdb1be;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .formImgCont {
@@ -29,7 +29,7 @@
     display: block;
 }
 
-form {
+.checkoutFormCont {
 
     width: 78%;
     margin: auto;
@@ -76,6 +76,8 @@ form {
     display: flex;
     gap: 1rem;
     margin-top: 0.5rem;
+    /* justify-content: center; */
+    flex-wrap: nowrap;
 }
 
 .subStatePost>div {
@@ -159,3 +161,23 @@ form {
     font-weight: bold;
     color: black;
 }
+@media only screen and (max-width: 480px) {
+    .checkoutContainer{
+        /* display: flex; */
+        flex-direction: column;
+        background-color: #fff;
+    }
+    .checkoutFormContainer {
+        width: 95%;
+        background-color: #fff;
+    }
+    .checkoutImgContainer{
+        display: none;
+    }
+    #continue{
+        width: 100%;
+    }
+}
+
+
+

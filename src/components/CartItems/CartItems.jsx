@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import style from '../../Page/AddToCart/AddToCart.module.css'
+// import style from '../../Page/AddToCart/AddToCart.module.css'
 import { useCart } from '../../context/cart';
 import toast, { LoaderIcon } from 'react-hot-toast';
 import { MdOutlineAirlineSeatLegroomReduced } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
+import style from './CartItems.module.css'
 
 
 const CartItems = ({ img, title, desc, price, itemCount }) => {
@@ -69,14 +70,17 @@ const CartItems = ({ img, title, desc, price, itemCount }) => {
         <>
             <div className={style["payment_cart"]}>
                 <div className={style["cart_items"]}>
-
+                    <div className={style.imgCont}>
                     <div className={style["cart_img_items"]}>
                         <img src={img} alt="" />
                     </div>
+                    </div>
+                    
+                    <div className={style.detailsCont}>
                     <div className={style["cart_details"]}>
                         <h2>{title}</h2>
                         <p>{desc}</p>
-                        <button className={style["item_price"]}> ${price}</button>
+                        <p className={style["item_price"]}> ${price}</p>
                     </div>
                     <div className={style["cart_quantity"]}>
                         <div>
@@ -89,6 +93,8 @@ const CartItems = ({ img, title, desc, price, itemCount }) => {
                     <div className={style["cart_price"]}>
                         <h3 className={style.price}>${itemValue * price}</h3>
                     </div>
+                    </div>
+                   
 
                 </div>
             </div>

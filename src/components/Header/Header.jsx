@@ -72,7 +72,7 @@ export function Header() {
                 <div className={style.headericonPart}>
                     <div>
                         {/* <AiOutlineSearch style={{fontSize:'',color:"white",marginRight:'1.2rem'}} /> */}
-                        <><Link to='/login'> <FaUser className={style.accountIcon} /></Link></>
+                         <FaUser className={style.accountIcon} />
                         <p style={{ color: 'white', fontSize: '1.2rem', marginRight: '1.2rem' }}>account</p>
                     </div>
                     <div>

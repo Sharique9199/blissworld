@@ -19,8 +19,9 @@ import BagPopUp from './components/BagPopUp/BagPopUp';
 import Checkout from './Page/Checkout/Checkout';
 import Payment from './Page/Payment/Payment';
 import { Header } from './components/Header/Header';
-import { Login } from './Page/Login/Login';
+
 import DummyHome from './Page/DummyHome/DummyHome';
+// import Login from './components/login/Login';
 // import BagSideShow from './components/BagSideShow/BagSideShow';
 // import {Home} from './Page/Home/Home'
 // import {Header} from './components/Header/Header'
@@ -36,30 +37,34 @@ function App() {
   return (
     <div>
 
-      {popUpData.showPopUp && <PopUpCart />}
+    {popUpData.showPopUp && <PopUpCart />}
 
       {popUpData.showBg && <BgBlur />}
 
       <Routes>
         <Route path='/' element={<Home />} />
-        
-      
+
+
         <Route path='/skincare' element={<SkinCare />} />
         <Route path="/bestseller" element={<BestSeller />} />
         <Route path="/bodyhaircare" element={<BodyCare />} />
         <Route path="/setkits" element={<SetKits />} />
         <Route path="/sales" element={<Sales />} />
-        <Route path='/total-items' element={<AddToCart />} />
+        <Route path='/total-items' element={<AddToCart />} /> */}
+
+
         {/* <Route path='/sideshow' element={<BagSideShow/>}/> */}
 
-        {/* <Route path='/sideshow' element={<BagPopUp />} /> */}
-        <Route path='/checkout' element={<Checkout />} />
-        <Route path='/payment' element={<Payment/>}/>
-  <Route path='/login' element={<Login/>}/>
+        <Route path='/sideshow' element={<BagPopUp />} />
+         <Route path='/checkout' element={<Checkout />} />
+        <Route path='/payment' element={<Payment />} />
+        {/* <Route path='/login' element={<Login />} /> */}
         <Route path='*' element={<PageNotfound />} />
       </Routes>
-      {/* <BagSideShow/> */}
+      {/* <BagSideShow/>  */}
 
+
+      {/* <Login/> */}
     </div>
 
   );
