@@ -37,7 +37,7 @@ const Home = () => {
                     }
                 </div>
 
-                {/* <div className={style1.bigCardBox}>
+                <div className={style1.bigCardBox}>
                     <div className={style1.bothBigCardBox}>
                         <div>
                             <img src="https://cdn11.bigcommerce.com/s-9p889rxpkb/images/stencil/original/image-manager/twintout-l-s.jpg" alt="" />
@@ -61,7 +61,7 @@ const Home = () => {
                         <button>SHOP BACKHAND BREAKDOWN</button>
 
                     </div>
-                </div> */}
+                </div>
 
                 <TitleInfo title={myData[1].main_title} info={myData[1].info} />
 
@@ -87,10 +87,10 @@ const Home = () => {
                     <p >Your daily dose of happiness, unfiltered.</p>
                 </div>
 
-                {/* <div className={style1.oneImgDiv}>
+                <div className={style1.oneImgDiv}>
                     <img src="https://tubular-queijadas-b99c86.netlify.app/static/media/snap.713b999f51fb079690cc.PNG" alt="" />
 
-                </div> */}
+                </div>
 
 
                 {/* <div style={{ display: 'flex', color: 'red', flexDirection: val ? 'column' : 'row' }}>

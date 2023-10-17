@@ -7,7 +7,7 @@ import { useCart } from '../../context/cart'
 import BagPopUp from '../BagPopUp/BagPopUp'
 import { useState } from 'react'
 import {GiHamburgerMenu} from 'react-icons/gi'
-
+import {ImCross} from 'react-icons/im'
 const navigation = [
     {
         name: 'Home',
@@ -41,6 +41,8 @@ const navigation = [
 
 
 export function Header() {
+
+    const [isMobile,setIsMobile]=useState(false);
 
     const [showCart,setShowCart]=useState(false)
     const [cart] = useCart();
@@ -83,7 +85,8 @@ export function Header() {
                     </div>
                 </div>
             </div>
-            <div className={style.headerCardAllBtn}>
+            {/* {style.headerCardAllBtn} */}
+            <div className={style.headerCardAllBtn } id= {isMobile ?'open':''}>
                 {
                     navigation.map((navigation) => {
                         return (
@@ -103,7 +106,12 @@ export function Header() {
                 
             </div>
             <div className={style.hamburContainer}>
-                <GiHamburgerMenu className={style.hamburIcon}/>
+               
+                <GiHamburgerMenu className={style.hamburIcon} onClick={()=>{
+                    setIsMobile(!isMobile)
+                }}/>
+               
+                
             </div>
         </div>
     )

@@ -28,9 +28,9 @@ const CartItems = ({ img, title, desc, price, itemCount }) => {
         setCart(removeCart);
         localStorage.setItem('blissworld_cart', JSON.stringify(removeCart));
         toast.success("Item removed successfully");
-        navigate(0);
+        // navigate(0);
     }
-    console.log(JSON.parse(localStorage.getItem('blissworld_cart')),"from local storage");
+    // console.log(JSON.parse(localStorage.getItem('blissworld_cart')),"from local storage");
 
     //decrementHandler
     const decrementHandler = () => {

@@ -45,7 +45,7 @@ const AddToCart = () => {
                             alt="" />
                     </div>
                     <div>
-                        <h3>Total:$521</h3>
+                        <h3>Total:$000</h3>
                         <p>Shipping & taxes calculated at checkout</p>
                         <Link to='/checkout'><button id={style.checkout}>checkout</button></Link>
                     </div>

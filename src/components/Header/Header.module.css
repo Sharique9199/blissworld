@@ -155,8 +155,22 @@ a{
         font-size: 2rem;
     }
     .headerCardAllBtn{
+        width: 100%;
         display: none;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        /* display: none; */
+        position: absolute;
+        top: 100%;
+        background-color: red;
+        /* display: none; */
+    filter: blur(0.5);
     
+    
+    }
+    #open{
+        display: flex;
     }
 }
 

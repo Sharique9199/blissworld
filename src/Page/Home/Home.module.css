@@ -97,5 +97,33 @@
 }
 
 .oneImgDiv img {
+    width: 100%;
     margin: 0 auto;
+}
+@media only screen and (max-width: 480px){
+   
+    .bigCardBox{
+        
+        flex-direction: column;
+
+    }
+    .bothBigCardBox {
+        width: 100%;
+    }
+    
+.bothBigCardBox>div img {
+    padding: 2.5rem 1rem;
+    /* padding: 5rem; */
+}
+
+.cardBoxDetails {
+    width: 85%;
+    padding: 2.5rem 1rem;
+    top: 78%;
+}
+
+.bothBigCardBox>button {
+    width: 65%;
+}
+
 }
