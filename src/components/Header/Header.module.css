@@ -1,95 +1,108 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 .HeaderPart {
     width: 100%;
     /* height: 10vh;  */
-     background-color: rgb(140,208,227);
+    background-color: rgb(140, 208, 227);
     /* border: 1px solid rgb(58, 55, 55); */
     position: sticky;
     top: 0;
     z-index: 1;
     padding: 1rem auto;
-    
+
 }
-.seacrAndFind{
+
+.seacrAndFind {
     width: 30%;
     display: flex;
 
 }
-.headerIcons{
+
+.headerIcons {
     font-size: 1.5rem;
     color: #fff;
     margin: 0.5rem 0 0 1.5rem;
 }
+
 /* .headerIcons2{
     font-size: 1.5rem;
     color: #fff;
     margin: 0.5rem 0 0 1.5rem;
 } */
-.headerIcons+p{
+.headerIcons+p {
     color: white;
     margin-left: 0.8rem;
     font-size: 1.2rem;
 }
+
 /* .headerIcons2+p{
     color: white;
     margin-left: 0.8rem;
     font-size: 1.2rem;
 } */
-.accountIcon{
+.accountIcon {
 
     font-size: 1.5rem;
     color: #fff;
     margin: 0.5rem 0 0 0.8rem;
     cursor: pointer;
 }
-.bagIcon{
+
+.bagIcon {
     color: #fff;
     margin: 0.5rem 0.8rem 0 0;
     cursor: pointer;
     font-size: 1.5rem;
 
 }
-.bagTag{
+
+.bagTag {
     color: #fff;
     font-size: 1.2rem;
     margin-right: 1.2rem;
 }
-.headerlogoText{
+
+.headerlogoText {
     width: 50%;
     text-align: center;
-   
+
 }
-.headerlogoText >a{
+
+.headerlogoText>a {
     color: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2.2rem;
 }
-.headericonPart{
+
+.headericonPart {
     width: 30%;
     display: flex;
     justify-content: end;
 }
-.headerCardAllBtn{
+
+.headerCardAllBtn {
     position: relative;
     width: 90%;
-    margin: auto;    
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    
+
 
 }
-.headerCardAllBtn>a{
+
+.headerCardAllBtn>a {
     text-transform: uppercase;
     color: #fff;
     font-size: 1.1rem;
@@ -101,13 +114,14 @@ a{
 /* .HeaderPart>p{
     justify-content: space-between;
 } */
-.zeroCount{
+.zeroCount {
     position: absolute;
     top: 0;
-    margin:0.4rem 0 0 0.52rem;
+    margin: 0.4rem 0 0 0.52rem;
     font-size: 1.22rem;
 }
-.hamburContainer{
+
+.hamburContainer {
 
     position: absolute;
     top: 20%;
@@ -115,83 +129,100 @@ a{
     display: none;
     /* font-size: large; */
 }
+
+.showMobileMenu {
+    display: none;
+}
+
 @media only screen and (max-width: 480px) {
 
-    .seacrAndFind{
+    .seacrAndFind {
         width: 30%;
         display: flex;
         flex-direction: column;
-    
+
     }
-    .headericonPart{
+
+    .headericonPart {
         width: 30%;
         display: flex;
         flex-direction: column;
         justify-content: end;
     }
-    .bagIcon{ 
+
+    .bagIcon {
         margin: 0.5rem 0.8rem 0 0.7rem;
     }
-    .bagTag{
-        
+
+    .bagTag {
+
         margin-left: 0.7rem;
     }
-    .zeroCount{
+
+    .zeroCount {
         position: absolute;
         top: 47%;
         left: 73%;
         font-size: 1.3rem;
         font-weight: bold;
     }
-    .hamburContainer{
 
-       
+    .hamburContainer {
+
+
         top: 25%;
         left: 88%;
         display: block;
         /* font-size: large; */
     }
-    .hamburIcon{
+
+    .hamburIcon {
         font-size: 2rem;
     }
-    .headerCardAllBtn{
+
+    /* .headerCardAllBtn {
         width: 100%;
-        display: none;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        /* display: none; */
         position: absolute;
         top: 100%;
         background-color: red;
-        /* display: none; */
-    filter: blur(0.5);
-    
-    
+        filter: blur(0.5);
+    } */
+
+    .headerCardAllBtn {
+        display: none;
     }
-    #open{
+
+    .showMobileMenu {
+        display: block;
+    }
+
+    #open {
         display: flex;
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px){
+@media only screen and (min-width: 481px) and (max-width: 768px) {
     .HeaderPart {
         width: 100%;
-       
-         background-color: rgb(140,208,227);
-       
+
+        background-color: rgb(140, 208, 227);
+
         position: sticky;
         top: 0;
         z-index: 1;
         padding: 1rem auto;
-        
+
     }
-    .headerCardAllBtn{
-          
+
+    .headerCardAllBtn {
+
         display: flex;
-        justify-content:center;
+        justify-content: center;
         flex-wrap: wrap;
-    
+
     }
 
 }

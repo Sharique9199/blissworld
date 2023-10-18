@@ -2,13 +2,15 @@ import style from './Header.module.css'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { CiLocationOn } from 'react-icons/ci'
 import { FaUser, FaShoppingCart } from 'react-icons/fa'
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink, Link, useNavigate } from 'react-router-dom'
 import { useCart } from '../../context/cart'
 import BagPopUp from '../BagPopUp/BagPopUp'
 import { useState } from 'react'
-import {GiHamburgerMenu} from 'react-icons/gi'
-import {ImCross} from 'react-icons/im'
-const navigation = [
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { ImCross } from 'react-icons/im'
+import { useAuth0 } from "@auth0/auth0-react";
+import MenuBarMobileView from '../MenuBarMobileView/MenuBarMobileView'
+export const navigation = [
     {
         name: 'Home',
         path: '/'
@@ -41,15 +43,29 @@ const navigation = [
 
 
 export function Header() {
+    const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
 
-    const [isMobile,setIsMobile]=useState(false);
+    const [showMobileMenu, setShowMobileMenu] = useState(false);
 
-    const [showCart,setShowCart]=useState(false)
+    const [showCart, setShowCart] = useState(false)
+    const [loginData, setLoginData] = useState(false);
+    const navigate = useNavigate()
     const [cart] = useCart();
 
     const showCartHandler = () => {
-        setShowCart(showCart?false:true);
+        if (window.innerWidth <= 480) {
+            navigate('/total-items')
+        }
+        setShowCart(showCart ? false : true);
     }
+    const showLogin = () => {
+        setLoginData(loginData ? false : true)
+    }
+
+    const mobileViewMenuHandler = () => {
+        setShowMobileMenu(showMobileMenu === false ? true : false);
+    }
+    console.log(window.innerWidth);
     return (
         <div className={style.HeaderPart}>
             <div style={{ display: 'flex', width: '90%', margin: '0px auto', paddingTop: '0.7rem' }}>
@@ -60,7 +76,7 @@ export function Header() {
                     </div>
                     {/* <FaLocationDot/> */}
                     <div>
-                        <CiLocationOn className={style.headerIcons}  />
+                        <CiLocationOn className={style.headerIcons} />
 
                         <p >find us</p>
                     </div>
@@ -73,20 +89,30 @@ export function Header() {
                 </div>
                 <div className={style.headericonPart}>
                     <div>
-                        {/* <AiOutlineSearch style={{fontSize:'',color:"white",marginRight:'1.2rem'}} /> */}
-                         <FaUser className={style.accountIcon} />
-                        <p style={{ color: 'white', fontSize: '1.2rem', marginRight: '1.2rem' }}>account</p>
+
+                        <FaUser className={style.accountIcon} onClick={showLogin} />
+                        {
+                            isAuthenticated ? <p onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+                                Log Out
+                            </p> : <p onClick={() => loginWithRedirect()}>account</p>
+                        }
+                        {/* <p style={{ color: 'white', fontSize: '1.2rem', marginRight: '1.2rem' }}>account</p> */}
+
+
                     </div>
-                    <div>
-                        {/* <AiOutlineSearch style={{fontSize:'1.5rem',color:"white",marginRight:'1.2rem'}} /> */}
-                        <FaShoppingCart className={style.bagIcon} />
-                        <p  className={style.bagTag}>bag</p>
-                       <p className={style.zeroCount} onClick={showCartHandler}>{cart.length} </p>
+
+                    <div >
+
+                        <FaShoppingCart className={style.bagIcon} onClick={showCartHandler} style={{ cursor: 'pointer' }} />
+                        <p className={style.bagTag}>bag</p>
+                        <p className={style.zeroCount} >{cart.length} </p>
                     </div>
                 </div>
             </div>
             {/* {style.headerCardAllBtn} */}
-            <div className={style.headerCardAllBtn } id= {isMobile ?'open':''}>
+
+
+            <div className={style.headerCardAllBtn}>
                 {
                     navigation.map((navigation) => {
                         return (
@@ -94,24 +120,21 @@ export function Header() {
                         )
                     })
                 }
-                {/* <p>Best Sellers</p>
-                <p>SkinCare</p>
-                <p>Body & HairCare</p>
-                <p>Sets &Kits</p>
-                <p>Sales</p>
-                <p>This is Bliss</p> */}
-                {
-                    showCart && <BagPopUp />
-                }
-                
+                {showCart && <BagPopUp />}
             </div>
+
+            {
+                showMobileMenu &&
+                <div className={style.showMobileMenu}>
+                    <MenuBarMobileView />
+                </div>
+            }
+
             <div className={style.hamburContainer}>
-               
-                <GiHamburgerMenu className={style.hamburIcon} onClick={()=>{
-                    setIsMobile(!isMobile)
-                }}/>
-               
-                
+
+                <GiHamburgerMenu className={style.hamburIcon} onClick={mobileViewMenuHandler} />
+
+
             </div>
         </div>
     )

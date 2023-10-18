@@ -1,0 +1,337 @@
+.SignUp-container{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  /* width: 100vw; */
+}
+.SignUp-container{
+  height: 86vh;
+}
+.SignUp {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 338px;
+  width: 400px;
+}
+.logIn{
+  display: grid;
+  grid-template-columns: 1fr;
+ 
+}
+.SignUp input ,.logIn input{
+  height: 24px;
+  width: 59%;
+  margin: 10px 0px 0px 86px;
+}
+
+.SignUp button ,.logIn button{
+  width: 40%;
+  margin:30px 120px ;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  color: #f2f2f2;
+  background-color: rgb(159, 32, 137);
+}
+
+.SignUp label ,.logIn label{
+  margin-top: 20px;
+  position: relative;
+  left: 85px;
+  top: 10px;
+}
+
+.wel {
+  width: 60vw;
+  text-align: center;
+  margin: 0;
+  height: 4rem;
+ 
+}
+.wel h1{
+  color:rgb(159, 32, 137);
+  font-size: 30px;
+}
+.profileBar {
+  position: relative;
+  height: 17px;
+  bottom: 60px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.log-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -94px;
+  width:18vw;
+  height: 22vh;
+  background: white;
+  padding: 8px;
+  box-shadow: 0 2px 6px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+
+.profileBar:hover .log-container {
+  display: block;
+}
+.log-container h3{
+  color: rgba(9, 8, 8, 0.666);
+  font-weight: bold;
+  font-size: 26px;
+  margin: 0px 0px 2px 0px;
+}
+.log-container p{
+  font-size: 16px;
+  padding: 0px;
+  color:  #2d2e2ed1;
+}
+.SignUpBtn{
+  padding:14px 90px;
+  margin-left: 20px;
+  margin-top: 12px;
+  background-color: rgb(159, 32, 137);
+  color:#fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+font-weight:bold;
+}
+.logout-btn{
+  padding:14px 90px;
+  margin-top: 22px;
+  margin-left: 16px;
+  font-weight:bold;
+  background-color: rgb(159, 32, 137);
+  color:#fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+}
+.profile-hr{
+  color: rgba(171, 165, 165, 0.551);
+}
+.login-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 600px;
+  width: 400px;
+}
+
+.haveAccBtn {
+  background-color: #f2f2f2;
+  color: rgb(159, 32, 137);
+  font-size: 14px;
+  border: none;
+}
+.dontHaveAccBtn{
+  background-color: #f2f2f2;
+  color: rgb(159, 32, 137);
+  font-size: 14px;
+  padding: 14px;
+  margin-top: 30px;
+  border: none;
+}
+.login-container img{
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.login-h3{
+  margin-top: 18px;
+  font-size: 24px;
+}
+.user-icon{
+  margin-right: 10px;
+  margin-left:12px ;
+  color:purple;
+}
+@media (max-width: 767px) {
+  .profileBar {
+    position: relative;
+    height: 20px;
+    width: 180%;
+    bottom: 20px;
+    right: 30px;
+    /* background-color:; */
+    cursor: pointer;
+    
+  }
+  
+  .log-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* right: 2px; */
+    left: -44px;
+    width: 42vw;
+    height: 14vh;
+    background:white;
+    /* opacity: 0; */
+    /* visibility: hidden; */
+    /* transition: opacity 0.9s ease; */
+    padding: 8px;
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .profileBar:hover .log-container {
+    display: block;
+  }
+  .log-container h3{
+    color: rgba(9, 8, 8, 0.703);
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0px 0px 2px 0px;
+  }
+  .log-container p{
+    font-size: 12px;
+    padding: 0px;
+    color:  #2d2e2ea2;
+  }
+  .SignUpBtn{
+    padding:6px 60px;
+    background-color: rgb(159, 32, 137);
+    color:#fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+  
+  }
+  .logout-btn{
+    padding:8px 50px;
+    margin-top: 22px;
+    margin-left: 16px;
+    font-weight:bold;
+    background-color: rgb(159, 32, 137);
+    color:#fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+  }
+
+  .SignUp-container{
+    height: 82vh;
+  }
+  .login-h3{
+    margin-top: 8px;
+    font-size: 19px;
+  }
+  .user-icon{
+    margin-right: 10px;
+    margin-left:12px ;
+    color:purple;
+  }
+  .dontHaveAccBtn{
+    font-size: 14px;
+    padding: 12px;
+    margin-top: 14px;
+    border: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+ 
+  
+  .log-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -94px;
+    width:20vw;
+    height: 22vh;
+    background: white;
+    padding: 8px;
+    box-shadow: 0 2px 6px 4px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  
+  .profileBar:hover .log-container {
+    display: block;
+  }
+  .log-container h3{
+    color: rgba(9, 8, 8, 0.666);
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0px 0px 2px 0px;
+  }
+  .log-container p{
+    font-size: 14px;
+    padding: 0px;
+    color:  #2d2e2ed1;
+  }
+  .SignUpBtn{
+    padding:14px 50px;
+    margin-left: 16px;
+    margin-top: 12px;
+    background-color: rgb(159, 32, 137);
+    color:#fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+  font-weight:bold;
+  }
+  .logout-btn{
+    padding:14px 50px;
+    margin-top: 22px;
+    margin-left: 16px;
+    font-weight:bold;
+    background-color: rgb(159, 32, 137);
+    color:#fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+  }
+  .profile-hr{
+    color: rgba(171, 165, 165, 0.551);
+  }
+  .login-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 600px;
+    width: 400px;
+  }
+  
+  .haveAccBtn {
+    background-color: #f2f2f2;
+    color: rgb(159, 32, 137);
+    font-size: 14px;
+    border: none;
+  }
+  .dontHaveAccBtn{
+    background-color: #f2f2f2;
+    color: rgb(159, 32, 137);
+    font-size: 14px;
+    padding: 14px;
+    margin-top: 30px;
+    border: none;
+  }
+  .login-container img{
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+.log-container  .login-h3{
+    margin-top: 12px;
+    font-size: 22px;
+  }
+  .user-icon{
+    margin-right: 10px;
+    margin-left:12px ;
+    color:purple;
+  }
+  .login-h3{
+    margin-top: 18px;
+    font-size: 24px;
+  }
+  .user-icon{
+    margin-right: 10px;
+    margin-left:12px ;
+    color:purple;
+  }
+}
