@@ -1,3 +1,17 @@
+.mainPopUpContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    inset: 0px;
+}
+
 .paymentcontainer {
     width: 45%;
     position: fixed;
@@ -23,7 +37,9 @@
 .paymmentCardTitle h4 {
     font-family: Arial, Helvetica, sans-serif;
 }
-
+.crossIcon{
+    cursor: pointer;
+}
 .cartDetailsAndImage {
     width: 100%;
     display: flex;
@@ -104,6 +120,74 @@ select {
     font-size: 1.2rem;
     cursor: pointer;
     background-color: rgb(140,208,227);
+}
+
+.animated {
+
+    -webkit-animation-duration: 1s;
+
+    animation-duration: 1s;
+
+    -webkit-animation-fill-mode: both;
+
+    animation-fill-mode: both;
+
+}
+
+.animated.faster {
+
+    -webkit-animation-duration: 500ms;
+
+    animation-duration: 500ms;
+
+}
+
+.fadeIn {
+
+    -webkit-animation-name: fadeIn;
+
+    animation-name: fadeIn;
+
+}
+
+.fadeOut {
+
+    -webkit-animation-name: fadeOut;
+
+    animation-name: fadeOut;
+
+}
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}
+
+@keyframes fadeOut {
+
+    from {
+
+        opacity: 1;
+
+    }
+
+    to {
+
+        opacity: 0;
+
+    }
+
 }
 @media only screen and (max-width: 480px) {
     .paymentcontainer {

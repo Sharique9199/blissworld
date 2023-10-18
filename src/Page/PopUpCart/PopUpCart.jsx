@@ -62,6 +62,7 @@ const PopUpCart = () => {
         <div className={style.popupContainer}>
 
           <div className={`${style.crossIcon} ${style.fedOut}`}>
+            
           {/* <div className={style.crossIcon}> */}
             < RxCross2 onClick={closePopHandler} style={{ cursor: "pointer" }} />
           </div>

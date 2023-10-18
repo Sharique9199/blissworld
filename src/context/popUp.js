@@ -11,6 +11,7 @@ const PopUpProvider = ({children}) => {
         desc:'',
         price:'',
         showPopUp:false,
+        showPaymentPop:false,
         showBg:false,
         bgHeight:0
     });

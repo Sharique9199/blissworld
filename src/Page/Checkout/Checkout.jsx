@@ -3,8 +3,18 @@ import Layout from '../../Layout'
 import style from './Checkout.module.css'
 import CheckoutItemList from '../../components/CheckoutItemList/CheckoutItemList'
 import { useCart } from '../../context/cart'
+import { usePopUp } from '../../context/popUp'
 
 const Checkout = () => {
+    const [popUpData,setPopupData]=usePopUp();
+    const showPaymentPopUp =()=>{
+        setPopupData(
+            {
+                showPaymentPop:true
+            }
+        )
+
+    }
 
     const [cart,setCart]=useCart();
   return (
@@ -135,7 +145,7 @@ const Checkout = () => {
 
                     <div className={style.ContAndPayContainer}>
                     <button className={style.continue}>Continue to Shopping</button>
-                    <button className={style.continue}>Payment</button>
+                    <button className={style.continue} onClick={showPaymentPopUp}>Payment</button>
                     </div>
                 </form>
             </div>

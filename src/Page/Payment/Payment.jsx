@@ -1,14 +1,32 @@
 import React from 'react'
 import style from './Payment.module.css'
 import { ImCross } from 'react-icons/im'
+import { usePopUp } from '../../context/popUp'
+import { useCart } from '../../context/cart'
 
 const Payment = () => {
+    const[cart,setCart]=useCart();
+    const[popUpData,setPopupData]=usePopUp();
+const closePaymentPopUo =() =>{
+    setPopupData({
+        showPaymentPop:false
+    })
+    
+}
+const paymentHandler =() =>{
+    alert('Order placed Successfully....')
+  
+}
+
+
     return (
         <>
+            <div className={` ${style.animated}
+      ${style.faster} ${style.fedIn} ${style.mainPopUpContainer}`}>
             <div className={style.paymentcontainer}>
                 <div className={style.paymmentCardTitle}>
                     <h4>Enter Card Details.</h4>
-                    < ImCross />
+                    < ImCross className={`${style.crossIcon} ${style.fedOut}`} onClick={closePaymentPopUo}/>
                 </div>
                 <div className={style.cartDetailsAndImage}>
                     <div className={style.cartDetails}>
@@ -61,8 +79,9 @@ const Payment = () => {
                 </div>
 
                 <div className={style.paymetSucesBtn}>
-                    <button>Order</button>
+                    <button onClick={paymentHandler}>Order</button>
                 </div>
+            </div>
             </div>
         </>
     )

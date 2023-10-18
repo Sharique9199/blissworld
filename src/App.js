@@ -27,6 +27,7 @@ import DummyHome from './Page/DummyHome/DummyHome';
 // import {Header} from './components/Header/Header'
 function App() {
   const [popUpData, setPopUpData] = usePopUp();
+
   // console.log("App", popUpData);
   // console.log("window",window.offsetHeight);
 
@@ -38,6 +39,7 @@ function App() {
     <div>
 
     {popUpData.showPopUp && <PopUpCart />}
+    {popUpData.showPaymentPop && <Payment/>}
 
       {popUpData.showBg && <BgBlur />}
 
