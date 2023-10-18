@@ -6,6 +6,7 @@ import { useCart } from '../../context/cart'
 import { Link } from 'react-router-dom'
 
 const AddToCart = () => {
+    let totalPrice=0;
     const [cart, setCart] = useCart();
     // console.log("itemCount1",itemCount);
 
@@ -29,6 +30,7 @@ const AddToCart = () => {
                 <hr/>
                    
                 {cart.map((item, i) => {
+                    totalPrice +=item.price*item.itemCount;
                     return <CartItems
                         key={i}
                         img={item.img}
@@ -45,7 +47,7 @@ const AddToCart = () => {
                             alt="" />
                     </div>
                     <div>
-                        <h3>Total:$000</h3>
+                        <h3>Total:${totalPrice}</h3>
                         <p>Shipping & taxes calculated at checkout</p>
                         <Link to='/checkout'><button id={style.checkout}>checkout</button></Link>
                     </div>

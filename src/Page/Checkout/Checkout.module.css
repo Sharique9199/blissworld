@@ -83,13 +83,17 @@
 .subStatePost>div {
     width: 50%;
 }
+.ContAndPayContainer{
+    display: flex;
+    gap: 2rem;
+}
 
-#continue {
+.continue {
     /* display: block; */
-    float: right;
+    /* float: right; */
     margin-top: 1.2rem;
     padding: 0.6rem;
-    width: 35%;
+    width: 50%;
     background-color: rgb(140, 208, 227);
     border-radius: 5px;
     font-size: 1rem;
@@ -174,9 +178,21 @@
     .checkoutImgContainer{
         display: none;
     }
-    #continue{
-        width: 100%;
+    .ContAndPayContainer{
+        display: flex;
+        gap: 2rem;
+        margin: 0.5rem 0;
     }
+    .continue{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+       /* padding: 0.5rem; */
+        /* width: 100%; */
+    }
+    
 }
 
 

@@ -15,11 +15,11 @@ const Payment = () => {
                         <form action="" className={style.paymentFormCont}> 
                             <label htmlFor="cardNumber">Card Number:</label>
                            
-                            <input type='nuumber' id="cardNumber"  className={style.cardNo}/>
+                            <input type='nuumber' id="cardNumber"  className={style.cardNo} required placeholder='Enter Card number'/>
                             <br />
                             
                             <label htmlFor="holderName">Card Holder Name:</label>
-                            <input type='text' id='holderName' className={style.name}/>
+                            <input type='text' id='holderName' className={style.name}  required placeholder='Card Holder Name'/>
                         </form>
                         <div className={style.expiry}>
                         <p>Expairy Date:</p>

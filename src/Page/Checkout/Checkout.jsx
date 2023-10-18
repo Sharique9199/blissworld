@@ -25,7 +25,7 @@ const Checkout = () => {
                             <p>Email</p>
                         </label>
                         <br/>
-                        <input type="email" id="email"/>
+                        <input type="email" id="email" required/>
                     </div>
                     {/* <h2 class="contact_info">Contact inhtmlFormation</h2> */}
 
@@ -50,30 +50,30 @@ const Checkout = () => {
                     <div className={style.nameDivSection}>
                         <div>
                             <div className={style.inputLargeDiv}>
-                                <label htmlFor="email">
+                                <label htmlFor="fName">
                                     <p>First Name</p>
                                 </label>
                                 <br/>
-                                <input type="text" id="email"/>
+                                <input type="text" id="fName" required/>
                             </div>
                         </div>
                         <div>
                             <div className={style.inputLargeDiv}>
-                                <label htmlFor="email">
+                                <label htmlFor="lName">
                                     <p>Last Name</p>
                                 </label>
                                 <br/>
-                                <input type="text" id="email"/>
+                                <input type="text" id="lName" required/>
                             </div>
                         </div>
                     </div>
 
                     <div className={style.inputLargeDiv}>
-                        <label htmlFor="email">
+                        <label htmlFor="shrev">
                             <p>Shreveport</p>
                         </label>
                         <br/>
-                        <input type="text" id="email"/>
+                        <input type="text" id="shrev" required/>
                     </div>
 
                     <div className={style.inputLargeDiv}>
@@ -120,7 +120,7 @@ const Checkout = () => {
                                     <p>Postcode</p>
                                 </label>
                                 <br/>
-                                <input type="number" id="postcode"/>
+                                <input type="number" id="postcode" required/>
                             </div>
                         </div>
                     </div>
@@ -130,10 +130,13 @@ const Checkout = () => {
                             <p>Phone</p>
                         </label>
                         <br/>
-                        <input type="tel"/>
+                        <input type="tel" required/>
                     </div>
 
-                    <button id={style.continue}>Continue to Shopping</button>
+                    <div className={style.ContAndPayContainer}>
+                    <button className={style.continue}>Continue to Shopping</button>
+                    <button className={style.continue}>Payment</button>
+                    </div>
                 </form>
             </div>
 
