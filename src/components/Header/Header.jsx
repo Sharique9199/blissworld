@@ -101,7 +101,7 @@ export function Header() {
 
                     </div>
 
-                    <div >
+                    <div className={style.bagIcons}>
 
                         <FaShoppingCart className={style.bagIcon} onClick={showCartHandler} style={{ cursor: 'pointer' }} />
                         <p className={style.bagTag}>bag</p>

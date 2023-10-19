@@ -198,3 +198,111 @@
     }
 
 }
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    /* .payment_cart{
+        width: 90%;
+        margin: 0 auto ;
+        background-color: black;
+    } */
+    .cart_items {
+        width: 90%;
+        margin: auto;
+        margin-top: 1.2rem;
+        display: flex;
+       
+    }
+    .imgCont{
+        width: 25%;
+        display: flex;
+       
+    }
+    .cart_img_items {
+        width: 100%;
+    }
+    
+    .cart_img_items>img {
+        width: 100%;
+        margin-top: 4rem;
+    
+    }
+    .detailsCont{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .cart_details {
+        width: 100%;
+        /* padding: 0.8rem; */
+    }
+    
+    .cart_details h2 {
+        font-size: 1.2rem;
+    }
+    
+    .cart_details>h2+p {
+        font-size: 0.8rem;
+        padding-top: 0.5rem;
+        /* padding-top: 1.2rem; */
+        /* font-weight: 800; */
+    }
+    
+    .cart_details>h2+p+p {
+        margin-top: 0.5rem;
+        width: 3.5rem;
+        padding: 0.3rem;
+        background-color: rgb(140, 208, 227);
+        font-weight: bold;
+        border: none;
+    }
+    
+    .cart_quantity {
+        width: 80%;
+       margin-left:0.8rem;
+       margin-top: -2rem;
+       display: flex;
+      
+        /* margin-left: 5rem; */
+    }
+    
+    .cart_quantity>div {
+        width: 75%;
+        border: 1px solid grey;
+        background-color: #fff;
+        margin: auto;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.3rem 1rem;
+    }
+    
+    #remove {
+/*     
+        display: inline-block; */
+        /* margin-left: 5rem; */
+        padding-top: 2.9rem;
+        cursor: pointer;
+    
+    }
+    
+    .dec,
+    .inc {
+        cursor: pointer;
+    }
+    
+    .cart_price {
+        width: 15%;
+    }
+    
+    .cart_price>h3 {
+        /* text-align: center; */
+        margin: 0.5rem 0 0 0.5rem;
+        font-weight: bold;
+        color: #0b7ed6;
+
+    }
+
+}

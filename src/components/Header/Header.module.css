@@ -199,24 +199,20 @@ a {
         display: block;
     }
 
-    #open {
+    /* #open {
         display: flex;
-    }
+    } */
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .HeaderPart {
         width: 100%;
 
-        background-color: rgb(140, 208, 227);
-
-        position: sticky;
-        top: 0;
-        z-index: 1;
-        padding: 1rem auto;
-
     }
-
+    .bagIcons{
+        margin-left: 0.5rem;
+        /* border: 1px solid red; */
+    }
     .headerCardAllBtn {
 
         display: flex;

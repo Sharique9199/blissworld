@@ -86,6 +86,46 @@ hr{
     }
     .cart_calculation>div{
         width: 50%;
+        /* border: 1px solid black;
+         */
+    }
+    .cart_calculation>div img{
+        width: 100%;
+    }
+    .cart_calculation>div:last-child>h3{
+        text-align: end;
+        padding:0.5rem 0.8rem 0 0;
+    }
+    .cart_calculation>div:last-child>h3+p{
+        text-align: center;
+        padding:0 0 0 0;
+    }
+    #checkout{
+        display: inline-block;
+        margin: 0.5rem 1.7rem 0.5rem 0;
+        padding: 0.5rem;
+        width: 70%;
+       
+      
+    } 
+    
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .cart_heading{
+       
+        display: none;
+    
+    }
+    .cart_calculation{
+        width: 90%;
+        margin: auto;
+        margin-top: 0.5rem;
+        display: flex;
+        
+    }
+    .cart_calculation>div{
+        width: 50%;
+        
         
     }
     .cart_calculation>div img{

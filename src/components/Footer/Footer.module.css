@@ -130,7 +130,6 @@
     
 .footerContainer{
     width: 100%;
-    background-color: red;
     display: flex;
     flex-direction: column;
    
@@ -140,9 +139,28 @@
        
        
     }
+    .footerElementDiv:first-child{
+        width: 20%;
+        /* border: 1px solid red; */
+    }
+    .footerElementDiv:first-child>img{
+        /* width: 100%; */
+        margin-left: -4rem;
+    }
     .footerInputAndButton{
         width: 100%;
         background-color: rgb(245,234,119);
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .footerElementDiv:first-child{
+        width: 20%;
+        /* border: 1px solid red; */
+    }
+    .footerElementDiv:first-child>img{
+        /* width: 100%; */
+        margin-left: -4rem;
     }
 }
     
