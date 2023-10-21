@@ -15,8 +15,8 @@ const CartItems = ({ img, title, desc, price, itemCount }) => {
     const [itemValue, setItemValue] = useState(cartCountItems);
 
     const navigate = useNavigate();
-    console.log("remove cart",cart,title);
-    
+    console.log("remove cart", cart, title);
+
 
     //removeHandler
     const removeHandler = () => {
@@ -24,7 +24,7 @@ const CartItems = ({ img, title, desc, price, itemCount }) => {
         const removeCart = cart.filter((item) => {
             return item.title !== title
         })
-        console.log(removeCart,"23");
+        console.log(removeCart, "23");
         setCart(removeCart);
         localStorage.setItem('blissworld_cart', JSON.stringify(removeCart));
         toast.success("Item removed successfully");
@@ -71,30 +71,30 @@ const CartItems = ({ img, title, desc, price, itemCount }) => {
             <div className={style["payment_cart"]}>
                 <div className={style["cart_items"]}>
                     <div className={style.imgCont}>
-                    <div className={style["cart_img_items"]}>
-                        <img src={img} alt="" />
-                    </div>
-                    </div>
-                    
-                    <div className={style.detailsCont}>
-                    <div className={style["cart_details"]}>
-                        <h2>{title}</h2>
-                        <p>{desc}</p>
-                        <p className={style["item_price"]}> ${price}</p>
-                    </div>
-                    <div className={style["cart_quantity"]}>
-                        <div>
-                            <h2 className={style.dec} onClick={decrementHandler}>-</h2>
-                            <h2 >{itemValue}</h2>
-                            <h2 className={style.inc} onClick={incrementHandler}>+</h2>
+                        <div className={style["cart_img_items"]}>
+                            <img src={img} alt="" />
                         </div>
-                        <p id={style.remove} className={style.removeCart} onClick={removeHandler}>remove</p>
                     </div>
-                    <div className={style["cart_price"]}>
-                        <h3 className={style.price}>${itemValue * price}</h3>
+
+                    <div className={style.detailsCont}>
+                        <div className={style["cart_details"]}>
+                            <h2>{title}</h2>
+                            <p>{desc}</p>
+                            <p className={style["item_price"]}> ${price}</p>
+                        </div>
+                        <div className={style["cart_quantity"]}>
+                            <div>
+                                <h2 className={style.dec} onClick={decrementHandler}>-</h2>
+                                <h2 >{itemValue}</h2>
+                                <h2 className={style.inc} onClick={incrementHandler}>+</h2>
+                            </div>
+                            <p id={style.remove} className={style.removeCart} onClick={removeHandler}>remove</p>
+                        </div>
+                        <div className={style["cart_price"]}>
+                            <h3 className={style.price}>${itemValue * price}</h3>
+                        </div>
                     </div>
-                    </div>
-                   
+
 
                 </div>
             </div>

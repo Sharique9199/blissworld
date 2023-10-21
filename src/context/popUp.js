@@ -13,6 +13,7 @@ const PopUpProvider = ({children}) => {
         showPopUp:false,
         showPaymentPop:false,
         showBg:false,
+        itemCount:1,
         bgHeight:0
     });
     return (

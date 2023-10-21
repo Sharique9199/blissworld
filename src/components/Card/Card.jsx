@@ -29,14 +29,14 @@ let Card = ({ img, title, desc, price }) => {
     const addToBagHandler = (e) => {
         e.stopPropagation();
         const localCartData = JSON.parse(localStorage.getItem('blissworld_cart')) || [];
-        console.log("localCartData",localCartData);
+        console.log("localCartData", localCartData);
         const isDataAvailable = localCartData.findIndex((item) => {
             return item.title === title;
         })
         console.log('localggg', isDataAvailable);
         if (isDataAvailable === -1) {
-            setCart([...cart, { img, title, desc, price,itemCount:1}]);
-            localCartData.push({ img, title, desc, price,itemCount:1 })
+            setCart([...cart, { img, title, desc, price, itemCount: 1 }]);
+            localCartData.push({ img, title, desc, price, itemCount: 1 })
             localStorage.setItem('blissworld_cart', JSON.stringify(localCartData));
             toast.success('Cart added sucessfully!');
         }
@@ -59,7 +59,7 @@ let Card = ({ img, title, desc, price }) => {
                 }
                 {/* <h3>{title}</h3> */}
                 <p>{desc}</p>
-               {btnDisable &&  <button onClick={addToBagHandler}>Add to bag ${price}</button>}
+                {btnDisable && <button onClick={addToBagHandler}>Add to bag ${price}</button>}
             </div>
         </>
 

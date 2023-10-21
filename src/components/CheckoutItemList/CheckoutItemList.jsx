@@ -1,7 +1,7 @@
 import React from 'react'
 import style from '../../Page/Checkout/Checkout.module.css'
 
-const CheckoutItemList = ({img,title,price}) => {
+const CheckoutItemList = ({img,title,price, itemCount}) => {
     return (
         <>
             <table>
@@ -14,7 +14,7 @@ const CheckoutItemList = ({img,title,price}) => {
                         <p>{title}</p>
                     </td>
                     <td className={style.scrollPriceCart}>
-                        <p>${price}</p>
+                        <p>${ itemCount*price}</p>
                     </td>
                 </tr>
                 {/* <hr /> */}
