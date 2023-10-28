@@ -21,6 +21,10 @@ import Payment from './Page/Payment/Payment';
 import { Header } from './components/Header/Header';
 
 import DummyHome from './Page/DummyHome/DummyHome';
+import Login from './components/LoginAndSignUp/Login';
+import { SignUp } from './components/LoginAndSignUp/SignUp';
+// import { SignIn } from './components/Login/SignIn';
+// import { SignUp } from './components/Login/SignUp';
 // import Login from './components/login/Login';
 // import BagSideShow from './components/BagSideShow/BagSideShow';
 // import {Home} from './Page/Home/Home'
@@ -52,21 +56,27 @@ function App() {
         <Route path="/bodyhaircare" element={<BodyCare />} />
         <Route path="/setkits" element={<SetKits />} />
         <Route path="/sales" element={<Sales />} />
-        <Route path='/total-items' element={<AddToCart />} /> */}
+        <Route path='/total-items' element={<AddToCart />} /> 
 
 
-        {/* <Route path='/sideshow' element={<BagSideShow/>}/> */}
+       
 
         <Route path='/sideshow' element={<BagPopUp />} />
          <Route path='/checkout' element={<Checkout />} />
         <Route path='/payment' element={<Payment />} />
-        {/* <Route path='/login' element={<Login />} /> */}
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/signup' element={<SignUp/>}/>
+       
         <Route path='*' element={<PageNotfound />} />
-      </Routes>
-      {/* <BagSideShow/>  */}
+      </Routes> 
+      {/* <BagSideShow/> 
 
 
       {/* <Login/> */}
+      {/* <SignIn/> */}
+      {/* <SignUp/> */}
+      {/* <Login/> */}
+    {/* <SignUp/> */}
     </div>
 
   );

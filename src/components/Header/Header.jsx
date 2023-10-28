@@ -43,7 +43,7 @@ export const navigation = [
 
 
 export function Header() {
-    const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
+    // const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
 
     const [showMobileMenu, setShowMobileMenu] = useState(false);
 
@@ -90,12 +90,13 @@ export function Header() {
                 <div className={style.headericonPart}>
                     <div>
 
-                        <FaUser className={style.accountIcon} onClick={showLogin} />
-                        {
+                       <Link to='/signup'> <FaUser className={style.accountIcon} onClick={showLogin} /></Link>
+                        <p>account</p>
+                        {/* {
                             isAuthenticated ? <p onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
                                 Log Out
                             </p> : <p onClick={() => loginWithRedirect()}>account</p>
-                        }
+                        } */}
                         {/* <p style={{ color: 'white', fontSize: '1.2rem', marginRight: '1.2rem' }}>account</p> */}
 
 

@@ -7,19 +7,21 @@ import { PopUpProvider } from './context/popUp';
 import PopUpCart from './Page/PopUpCart/PopUpCart';
 import { CartProvider } from './context/cart';
 import { Toaster } from 'react-hot-toast';
-import { Auth0Provider } from '@auth0/auth0-react';
+// import { Auth0Provider } from '@auth0/auth0-react';
+import { AuthContext } from './context/AuthContext';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Auth0Provider
-    domain="dev-1ysnxt3jj2wdfko6.us.auth0.com"
-    clientId="cP8nG0oQ7ETNRYN82tENRpDWfaBKYAoS"
-    authorizationParams={{
-      redirect_uri: window.location.origin
-    }}
-  >
-  <BrowserRouter>
+  // <Auth0Provider
+  //   domain="dev-1ysnxt3jj2wdfko6.us.auth0.com"
+  //   clientId="cP8nG0oQ7ETNRYN82tENRpDWfaBKYAoS"
+  //   authorizationParams={{
+  //     redirect_uri: window.location.origin
+  //   }}
+  // >
+    <AuthContext>
+    <BrowserRouter>
     <PopUpProvider>
       <CartProvider>
         <Toaster />
@@ -27,7 +29,9 @@ root.render(
       </CartProvider>
     </PopUpProvider>
   </BrowserRouter>
-  </Auth0Provider>
+  
+    </AuthContext>
+ 
 
 
 );
