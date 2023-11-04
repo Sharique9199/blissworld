@@ -59,7 +59,11 @@ a {
     margin: 0.5rem 0 0 0.8rem;
     cursor: pointer;
 }
-
+.accountTag{
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 1.2rem;
+}
 .bagIcon {
     color: #fff;
     margin: 0.5rem 0.8rem 0 0;

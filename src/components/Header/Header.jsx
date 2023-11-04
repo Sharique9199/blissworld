@@ -91,7 +91,7 @@ export function Header() {
                     <div>
 
                        <Link to='/signup'> <FaUser className={style.accountIcon} onClick={showLogin} /></Link>
-                        <p>account</p>
+                        <p className={style.accountTag}>account</p>
                         {/* {
                             isAuthenticated ? <p onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
                                 Log Out
