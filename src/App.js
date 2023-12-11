@@ -19,11 +19,10 @@ import BagPopUp from './components/BagPopUp/BagPopUp';
 import Checkout from './Page/Checkout/Checkout';
 import Payment from './Page/Payment/Payment';
 import { Header } from './components/Header/Header';
-import {auth} from "./Firebase";
+import { auth } from "./Firebase";
 
 import DummyHome from './Page/DummyHome/DummyHome';
-import Login from './components/LoginAndSignUp/Login';
-import { SignUp } from './components/LoginAndSignUp/SignUp';
+
 import { Register } from './components/SignAndLoginPage/Register';
 import { Submit } from './components/SignAndLoginPage/Submit';
 // import { SignIn } from './components/Login/SignIn';
@@ -33,18 +32,17 @@ import { Submit } from './components/SignAndLoginPage/Submit';
 // import {Home} from './Page/Home/Home'
 // import {Header} from './components/Header/Header'
 function App() {
-   
+
 
   //firebase code
-  const [userName,setUserName] = useState("");
+  const [userName, setUserName] = useState("");
 
-  useEffect(()=>{
-auth.onAuthStateChanged((user)=>{
-  if(user){
-    setUserName(user.displayName); 
-  }
-  console.log(user);
-},[]);
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        setUserName(user.displayName);
+      }
+    }, []);
   })
 
 
@@ -60,8 +58,8 @@ auth.onAuthStateChanged((user)=>{
   return (
     <div>
 
-    {popUpData.showPopUp && <PopUpCart />}
-    {popUpData.showPaymentPop && <Payment/>}
+      {popUpData.showPopUp && <PopUpCart />}
+      {popUpData.showPaymentPop && <Payment />}
 
       {popUpData.showBg && <BgBlur />}
 
@@ -69,26 +67,26 @@ auth.onAuthStateChanged((user)=>{
         <Route path='/' element={<Home userName={userName} />} />
 
 
-        <Route path='/skincare' element={<SkinCare userName ={userName}/>} />
-        <Route path="/bestseller" element={<BestSeller userName={userName}/>} />
-        <Route path="/bodyhaircare" element={<BodyCare userName={userName}/>} />
-        <Route path="/setkits" element={<SetKits userName={userName}/>} />
-        <Route path="/sales" element={<Sales userName={userName}/>} />
-        <Route path='/total-items' element={<AddToCart userName={userName} />} /> 
+        <Route path='/skincare' element={<SkinCare userName={userName} />} />
+        <Route path="/bestseller" element={<BestSeller userName={userName} />} />
+        <Route path="/bodyhaircare" element={<BodyCare userName={userName} />} />
+        <Route path="/setkits" element={<SetKits userName={userName} />} />
+        <Route path="/sales" element={<Sales userName={userName} />} />
+        <Route path='/total-items' element={<AddToCart userName={userName} />} />
 
 
-       
 
-        <Route path='/sideshow' element={<BagPopUp userName={userName}/>} />
-         <Route path='/checkout' element={<Checkout userName ={userName}/>} />
-        <Route path='/payment' element={<Payment userName={userName}/>} />
+
+        <Route path='/sideshow' element={<BagPopUp userName={userName} />} />
+        <Route path='/checkout' element={<Checkout userName={userName} />} />
+        <Route path='/payment' element={<Payment userName={userName} />} />
         {/* <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<SignUp/>}/> */}
-        <Route path='/signup' element={<Register/>}/>
-       <Route path='/login' element={ <Submit/>}/>
-       
+        <Route path='/signup' element={<Register />} />
+        <Route path='/login' element={<Submit />} />
+
         <Route path='*' element={<PageNotfound />} />
-      </Routes> 
+      </Routes>
       {/* <BagSideShow/> 
 
 
@@ -96,7 +94,7 @@ auth.onAuthStateChanged((user)=>{
       {/* <SignIn/> */}
       {/* <SignUp/> */}
       {/* <Login/> */}
-    {/* <SignUp/> */}
+      {/* <SignUp/> */}
     </div>
 
   );

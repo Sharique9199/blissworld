@@ -10,6 +10,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { ImCross } from 'react-icons/im'
 import { useAuth0 } from "@auth0/auth0-react";
 import MenuBarMobileView from '../MenuBarMobileView/MenuBarMobileView'
+import { useAuth } from '../../context/AuthContext'
 export const navigation = [
     {
         name: 'Home',
@@ -50,6 +51,7 @@ export function Header() {
     const [showCart, setShowCart] = useState(false)
     const [loginData, setLoginData] = useState(false);
     const navigate = useNavigate()
+    const [auth, setAuth] = useAuth();
     const [cart] = useCart();
 
     const showCartHandler = () => {
@@ -65,7 +67,15 @@ export function Header() {
     const mobileViewMenuHandler = () => {
         setShowMobileMenu(showMobileMenu === false ? true : false);
     }
-    console.log(window.innerWidth);
+    const logoutHandler = (e) => {
+        if (e.target.value == 'logout') {
+            setAuth({ username: '', email: '', token: null });
+            localStorage.removeItem('blissworldAuth');
+            navigate('/login');
+        }
+
+    }
+
     return (
         <div className={style.HeaderPart}>
             <div style={{ display: 'flex', width: '90%', margin: '0px auto', paddingTop: '0.7rem' }}>
@@ -88,16 +98,18 @@ export function Header() {
                     <Link to='/'>bliss</Link>
                 </div>
                 <div className={style.headericonPart}>
+
                     <div>
 
-                       <Link to='/signup'> <FaUser className={style.accountIcon} onClick={showLogin} /></Link>
+
+                        <Link to='/signup'> <FaUser className={style.accountIcon} onClick={showLogin} /></Link>
                         <p className={style.accountTag}>account</p>
-                        {/* {
-                            isAuthenticated ? <p onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
-                                Log Out
-                            </p> : <p onClick={() => loginWithRedirect()}>account</p>
-                        } */}
-                        {/* <p style={{ color: 'white', fontSize: '1.2rem', marginRight: '1.2rem' }}>account</p> */}
+                        {auth.token &&
+                            <select name="" id="" onChange={logoutHandler}>
+                                <option value="">{auth.username}</option>
+                                <option value="logout">Logout</option>
+                            </select>
+                        }
 
 
                     </div>

@@ -13,25 +13,18 @@ import { AuthContext } from './context/AuthContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <Auth0Provider
-  //   domain="dev-1ysnxt3jj2wdfko6.us.auth0.com"
-  //   clientId="cP8nG0oQ7ETNRYN82tENRpDWfaBKYAoS"
-  //   authorizationParams={{
-  //     redirect_uri: window.location.origin
-  //   }}
-  // >
-    <AuthContext>
+  <AuthContext>
     <BrowserRouter>
-    <PopUpProvider>
-      <CartProvider>
-        <Toaster />
-        <App />
-      </CartProvider>
-    </PopUpProvider>
-  </BrowserRouter>
-  
-    </AuthContext>
- 
+      <PopUpProvider>
+        <CartProvider>
+          <Toaster />
+          <App />
+        </CartProvider>
+      </PopUpProvider>
+    </BrowserRouter>
+
+  </AuthContext>
+
 
 
 );

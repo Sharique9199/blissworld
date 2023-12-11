@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Layout from '../../Layout'
 import style from './Checkout.module.css'
 import CheckoutItemList from '../../components/CheckoutItemList/CheckoutItemList'
 import { useCart } from '../../context/cart'
 import { usePopUp } from '../../context/popUp';
 import loader from '../../images/loader.gif';
+import { useAuth } from '../../context/AuthContext'
+import { useNavigate } from 'react-router-dom'
 
 const Checkout = () => {
     const [popUpData, setPopupData] = usePopUp();
+    const navigate = useNavigate();
+    const [user] = useAuth();
+    console.log('user', user);
     const showPaymentPopUp = () => {
         setPopupData(
             {
@@ -26,7 +31,14 @@ const Checkout = () => {
         return subTotalOrderPrice;
     }
 
+    useEffect(() => {
+        if (!user?.token) {
+            navigate('/login');
+        }
+    }, [!user?.token])
+
     return (
+        user.token &&
         <Layout>
             <div className={style.checkoutContainer}>
 
