@@ -6,6 +6,7 @@ import { auth } from '../../Firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { useAuth } from '../../context/AuthContext';
 import loader from '../../images/loader.gif';
+import Layout from '../../Layout';
 
 
 export const Submit = () => {
@@ -71,29 +72,37 @@ export const Submit = () => {
     }
   })
   return (
-    user.token ?
-      (<img src={loader} />) :
-      (
-        <div className='upperbox'>
-          <div className='box'>
-            <h1>Login</h1>
-          </div>
-          <div className='box'>
-            <label htmlFor='email'>Email</label>
-            <input type='email' placeholder='Enter email address' id='email' required onChange={(event) => setValues((prev) => ({ ...prev, email: event.target.value }))} />
-          </div>
-          <div className='box'>
-            <label htmlFor='password'>Password</label>
-            <input type='password' placeholder='Enter email address' id='password' required onChange={(event) => setValues((prev) => ({ ...prev, password: event.target.value }))} />
-          </div>
-          <h4 className='error'>{errorMessage}</h4>
-          <div className='box'>
-            <button type='submit' onClick={handleSubmit} disabled={submitButtonDisable}>Login</button>
-          </div>
-          <div className='box'>
-            <h3>Already have an account? <Link to="/signup">Sign up</Link></h3>
-          </div>
-        </div>
-      )
+
+    <Layout>
+      {
+          user.token ?
+          (<img src={loader}></img>) :
+          (
+            <div className='loginSingUpContainer'>
+              <div className='upperbox'>
+              <div className='box'>
+                <h1>Login</h1>
+              </div>
+              <div className='box'>
+                <label htmlFor='email'>Email</label>
+                <input type='email' placeholder='Enter email address' id='email' required onChange={(event) => setValues((prev) => ({ ...prev, email: event.target.value }))} />
+              </div>
+              <div className='box'>
+                <label htmlFor='password'>Password</label>
+                <input type='password' placeholder='Enter email address' id='password' required onChange={(event) => setValues((prev) => ({ ...prev, password: event.target.value }))} />
+              </div>
+              <h4 className='error'>{errorMessage}</h4>
+              <div className='box'>
+                <button type='submit' onClick={handleSubmit} disabled={submitButtonDisable}>Login</button>
+              </div>
+              <div className='box'>
+                <h3>Already have an account? <Link to="/signup"><span>Sign up</span></Link></h3>
+              </div>
+            </div>
+            </div>
+          )
+      }
+    </Layout>
+    
   )
 }

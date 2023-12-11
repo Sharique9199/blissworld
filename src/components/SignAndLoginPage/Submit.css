@@ -1,52 +1,71 @@
-.upperbox{
-    margin-top: 90px;
+.loginSingUpContainer {
+    padding: 2rem;
+    background-image: linear-gradient(rgb(154, 204, 235), rgb(244, 152, 244));
+
+}
+
+.upperbox {
+    /* margin-top: 90px; */
     background-color: rgb(222, 215, 215);
     width: 30%;
     margin-left: 35%;
     min-height: 400px;
     border-radius: 10px;
     color: black;
- display: flex;
- flex-direction: column;
- justify-content: center;
- padding: 15px 0px;
- }
- 
- .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../../images/background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid rgb(139, 135, 135);
+}
+
+.box {
     display: flex;
     flex-direction: column;
     width: 90%;
     margin-left: 5%;
     margin-bottom: 16px;
- 
- }
- .box label{
-     font-size: 1.5rem;
-     margin-bottom: 3px;
- }
- .box input{
+
+}
+
+.box label {
+    font-size: 1.5rem;
+    margin-bottom: 3px;
+}
+
+.box input {
     padding: 10px 5px;
     border-radius: 4px;
     font-size: 1rem;
     outline: none;
     border: 1px solid gray;
- }
- .error{
+}
+
+.error {
     text-align: center;
     color: red;
     padding: 0 0 5px 0;
 }
- .box button{
-     padding: 10px 5px;
-     border-radius: 4px;
-     font-size: 1.2rem;
-     font-weight: 700;
-     background-color: aquamarine;
-     border: 1px solid gray;
- }
- .box h1{
-     text-align: center;
- }
- button:disabled{
-     background-color: gray;
- }
+
+.box button {
+    padding: 10px 5px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: rgb(245,234,119);
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.box span{
+    color:rgb(8, 12, 250);
+}
+.box h1 {
+    text-align: center;
+}
+
+button:disabled {
+    background-color: gray;
+}
