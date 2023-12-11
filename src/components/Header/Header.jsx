@@ -101,15 +101,26 @@ export function Header() {
 
                     <div>
 
+                        {
+                            auth.token ? auth.token &&
 
-                        <Link to='/signup'> <FaUser className={style.accountIcon} onClick={showLogin} /></Link>
-                        <p className={style.accountTag}>account</p>
-                        {auth.token &&
+                                <select name="" id="" onChange={logoutHandler} className={style.logOutContainer}>
+                                    <option value="">{auth.username}</option>
+                                    <option value="logout">Logout</option>
+                                </select>
+                            : 
+                           <> <Link to='/signup'> <FaUser className={style.accountIcon} onClick={showLogin} /></Link>
+                            <p className={style.accountTag}>account</p></>
+    
+                        }
+                         {/* <Link to='/signup'> <FaUser className={style.accountIcon} onClick={showLogin} /></Link>
+                     <p className={style.accountTag}>account</p> */}
+                        {/* {auth.token &&
                             <select name="" id="" onChange={logoutHandler}>
                                 <option value="">{auth.username}</option>
                                 <option value="logout">Logout</option>
                             </select>
-                        }
+                        } */}
 
 
                     </div>

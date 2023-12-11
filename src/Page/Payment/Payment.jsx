@@ -25,7 +25,8 @@ const Payment = () => {
         navigate('/')
         setShowLoader(true)
         setCart('')
-        JSON.parse(localStorage.getItem('blissworld_cart'))
+        localStorage.removeItem('blissworld_cart');
+        // JSON.parse(localStorage.getItem('blissworld_cart'))
     }
 
     // useEffect(() => {

@@ -7,6 +7,7 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 import { useAuth } from '../../context/AuthContext';
 import loader from '../../images/loader.gif';
 import Layout from '../../Layout';
+import toast from 'react-hot-toast';
 
 
 export const Submit = () => {
@@ -63,7 +64,7 @@ export const Submit = () => {
       }));
       navigate("/");
     } catch (error) {
-      console.log(error);
+      toast.error("Enter Valid Username and Password !!!!")
     }
   }
   useEffect(() => {

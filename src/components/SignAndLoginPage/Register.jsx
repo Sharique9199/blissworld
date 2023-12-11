@@ -9,6 +9,7 @@ import Layout from '../../Layout';
 
 
 
+
 export const Register = () => {
     const navigate = useNavigate();
     const [errorMessage, setErrorMessage] = useState("");
@@ -34,7 +35,7 @@ export const Register = () => {
                 updateProfile(user, {
                     displayName: values.name,
                 })
-                navigate("/");
+                navigate("/login");
             })
             .catch((err) => {
                 setSubmitButtonDisable(false);
