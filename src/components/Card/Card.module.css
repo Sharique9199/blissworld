@@ -7,6 +7,7 @@
     cursor: pointer;
     border: 1px solid yellow;
     width: 315px;
+    /* background-color: red; */
 }
 
 .imageCard {
@@ -66,14 +67,12 @@
 }
 
 /* Responsive */
-@media only screen and (max-width: 600px) {
-    .CardBox {
-        width: 95%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-
+@media only screen and (min-width: 520px) and (max-width: 768px){
+    .singleCart {
+        margin:0.4rem auto;
+        width: 45%;
+        padding: 0.5rem;
 
     }
+    
 }
