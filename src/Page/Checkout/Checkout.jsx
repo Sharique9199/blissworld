@@ -3,7 +3,8 @@ import Layout from '../../Layout'
 import style from './Checkout.module.css'
 import CheckoutItemList from '../../components/CheckoutItemList/CheckoutItemList'
 import { useCart } from '../../context/cart'
-import { usePopUp } from '../../context/popUp'
+import { usePopUp } from '../../context/popUp';
+import loader from '../../images/loader.gif';
 
 const Checkout = () => {
     const [popUpData, setPopupData] = usePopUp();

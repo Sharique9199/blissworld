@@ -45,7 +45,7 @@ const CartItems = ({ img, title, desc, price, itemCount }) => {
                 }
             })
             setCart(customCart);
-            localStorage.setItem('blissworld_cart', JSON.stringify(customCart))
+            localStorage.setItem('blissworld_cart', JSON.stringify(customCart))  
         }
 
     }
