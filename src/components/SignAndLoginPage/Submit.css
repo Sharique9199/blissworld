@@ -69,3 +69,11 @@
 button:disabled {
     background-color: gray;
 }
+
+@media only screen and (max-width: 480px){
+    .upperbox {
+       width: 90%;
+       margin: auto;
+    }
+
+}
